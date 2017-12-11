@@ -1,0 +1,11 @@
+framework module baggage_journey {
+  umbrella header "baggage_journey.h"
+
+  export *
+  module * { export * }
+}
+
+module baggage_journey.Swift {
+    header "baggage_journey-Swift.h"
+    requires objc
+}

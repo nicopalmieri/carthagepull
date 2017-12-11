@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "v1.7.0",
+  "iOS" : [
+    {
+      "name" : "DateTools",
+      "hash" : "e1e8d5725676c33eb2e9aa8e9f6a8e1ed8bd12e726723736a1a09814c883528f"
+    }
+  ]
+}

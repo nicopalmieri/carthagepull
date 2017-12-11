@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.4",
+  "iOS" : [
+    {
+      "name" : "baggage_journey",
+      "hash" : "e19dd7619ff980263196f4d4d19f10284d5a78d438cf5177d78744635f218b83"
+    }
+  ]
+}

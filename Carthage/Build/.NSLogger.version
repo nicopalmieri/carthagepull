@@ -1,0 +1,9 @@
+{
+  "commitish" : "v1.8.2",
+  "iOS" : [
+    {
+      "name" : "NSLogger",
+      "hash" : "ea9e7101682657ffceac8a87b0f0c0273b811814f1726dff0bee68b08026e413"
+    }
+  ]
+}

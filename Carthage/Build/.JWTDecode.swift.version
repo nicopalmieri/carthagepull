@@ -1,0 +1,24 @@
+{
+  "Mac" : [
+    {
+      "name" : "JWTDecode",
+      "hash" : "ca3565796af10de02654bd468e299cd6ae6d69194afc0c268e2043d0d92a14d1"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+    {
+      "name" : "JWTDecode",
+      "hash" : "a6045b4ac6e8b8a9534431fb92a10a5c627e851ccd9d23b9afa14864c2f1bebd"
+    }
+  ],
+  "commitish" : "2.1.1",
+  "iOS" : [
+    {
+      "name" : "JWTDecode",
+      "hash" : "230c0fbd83100d4ea85179e5db5e37c56a0ec6114433c372106f499c4813c811"
+    }
+  ]
+}

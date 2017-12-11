@@ -14,6 +14,10 @@
 		38BA98721FDEDC77008297AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38BA98701FDEDC77008297AA /* LaunchScreen.storyboard */; };
 		38BA987D1FDEDC77008297AA /* pullFromCartExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA987C1FDEDC77008297AA /* pullFromCartExampleTests.swift */; };
 		38BA98881FDEDC77008297AA /* pullFromCartExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA98871FDEDC77008297AA /* pullFromCartExampleUITests.swift */; };
+		38BA98E91FDF18A6008297AA /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BA98E41FDF1362008297AA /* Lottie.framework */; };
+		38BA98EA1FDF18A6008297AA /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38BA98E41FDF1362008297AA /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		38BA98EB1FDF18A6008297AA /* baggage_journey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BA98E21FDF1334008297AA /* baggage_journey.framework */; };
+		38BA98EC1FDF18A6008297AA /* baggage_journey.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38BA98E21FDF1334008297AA /* baggage_journey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		38BA98ED1FDF18A6008297AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				38BA98EC1FDF18A6008297AA /* baggage_journey.framework in Embed Frameworks */,
+				38BA98EA1FDF18A6008297AA /* Lottie.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		38BA98641FDEDC77008297AA /* pullFromCartExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pullFromCartExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BA98671FDEDC77008297AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +66,8 @@
 		38BA98831FDEDC77008297AA /* pullFromCartExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pullFromCartExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BA98871FDEDC77008297AA /* pullFromCartExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pullFromCartExampleUITests.swift; sourceTree = "<group>"; };
 		38BA98891FDEDC77008297AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38BA98E21FDF1334008297AA /* baggage_journey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = baggage_journey.framework; path = Carthage/Build/iOS/baggage_journey.framework; sourceTree = "<group>"; };
+		38BA98E41FDF1362008297AA /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38BA98EB1FDF18A6008297AA /* baggage_journey.framework in Frameworks */,
+				38BA98E91FDF18A6008297AA /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,7 @@
 				38BA987B1FDEDC77008297AA /* pullFromCartExampleTests */,
 				38BA98861FDEDC77008297AA /* pullFromCartExampleUITests */,
 				38BA98651FDEDC77008297AA /* Products */,
+				38BA98E11FDF1334008297AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +149,15 @@
 			path = pullFromCartExampleUITests;
 			sourceTree = "<group>";
 		};
+		38BA98E11FDF1334008297AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38BA98E41FDF1362008297AA /* Lottie.framework */,
+				38BA98E21FDF1334008297AA /* baggage_journey.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +168,7 @@
 				38BA98601FDEDC76008297AA /* Sources */,
 				38BA98611FDEDC76008297AA /* Frameworks */,
 				38BA98621FDEDC76008297AA /* Resources */,
+				38BA98ED1FDF18A6008297AA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,12 +461,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = pullFromCartExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.latam.pullFromCartExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -441,12 +480,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = pullFromCartExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.latam.pullFromCartExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
