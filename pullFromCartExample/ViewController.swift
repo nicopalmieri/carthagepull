@@ -10,6 +10,7 @@ import UIKit
 import baggage_journey
 
 class ViewController: UIViewController {
+    let controller = BaggageController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +18,11 @@ class ViewController: UIViewController {
     }
 
     public func showMeSomeMagic() {
-        let controller = BaggageController()
         controller.showThaView()
     }
-}
 
+    @IBAction func pushTapped(_ sender: Any) {
+        let magic = controller.createView()
+        self.navigationController?.pushViewController(magic, animated: true)
+    }
+}

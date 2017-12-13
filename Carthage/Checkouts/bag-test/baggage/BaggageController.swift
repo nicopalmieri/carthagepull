@@ -9,15 +9,28 @@
 import UIKit
 
 public final class BaggageController: UIViewController {
-
     override public func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
         showThaView()
     }
 
+    @IBAction func buttonTapped(_ sender: Any) {
+        print("WADDUP?!")
+    }
+
     public func showThaView() {
-        navigationItem.title = "Feliz navida'"
         print("success!")
     }
-}
 
+    public func createView() -> BaggageController {
+        return self
+    }
+
+    // MARK: - Private
+
+    fileprivate func setupView() {
+        self.title = "Just a title"
+        self.view.backgroundColor = UIColor.lightGray
+    }
+}

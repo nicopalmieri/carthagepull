@@ -1,9 +1,18 @@
 {
-  "commitish" : "1.4",
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "1.7",
   "iOS" : [
     {
       "name" : "baggage_journey",
-      "hash" : "e19dd7619ff980263196f4d4d19f10284d5a78d438cf5177d78744635f218b83"
+      "hash" : "cf3f717a58d9422c7e0c3e52b324c71a98e6ccb77609e6f7367c7e069c0e447d"
     }
   ]
 }
