@@ -14,19 +14,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        showMeSomeMagic()
-    }
-
-    public func showMeSomeMagic() {
-        manager.showThaView()
     }
 
     @IBAction func pushTapped(_ sender: Any) {
-
-        let bundle1 = Bundle(for: BaseController.self)
-        let storyboard = UIStoryboard(name: "Main", bundle: bundle1)
-        let controller = storyboard.instantiateViewController(withIdentifier: "BaseController") as! BaseController
-
+        let controller = manager.getControllerBy(identifier: "BaseController")
         self.navigationController?.pushViewController(controller, animated: true)
     }
 }
