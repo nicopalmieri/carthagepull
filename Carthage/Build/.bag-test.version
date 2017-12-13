@@ -8,11 +8,11 @@
   "tvOS" : [
 
   ],
-  "commitish" : "1.7",
+  "commitish" : "1.7.7",
   "iOS" : [
     {
       "name" : "baggage_journey",
-      "hash" : "cf3f717a58d9422c7e0c3e52b324c71a98e6ccb77609e6f7367c7e069c0e447d"
+      "hash" : "2363f92a4f1a320286de2887d84eee74f3785bc385c8f6aef3ce2cafc8a3488a"
     }
   ]
 }
