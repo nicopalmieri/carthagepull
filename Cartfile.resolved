@@ -1,3 +1,3 @@
 github "Alamofire/Alamofire" "4.6.0"
 github "Alamofire/AlamofireNetworkActivityIndicator" "2.2.0"
-github "nicopalmieri/bag-test" "1.7.8"
+github "nicopalmieri/bag-test" "1.8.2"

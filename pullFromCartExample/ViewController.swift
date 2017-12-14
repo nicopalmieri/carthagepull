@@ -10,14 +10,14 @@ import UIKit
 import baggage_journey
 
 class ViewController: UIViewController {
-    let manager = BaggageController()
+    let manager = Baggage()
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     @IBAction func pushTapped(_ sender: Any) {
-        let controller = manager.getControllerBy(identifier: "BaseController")
+        let controller = manager.getControllerBy(identifier: "LoginController")
         navigationController?.pushViewController(controller, animated: true)
     }
 }
