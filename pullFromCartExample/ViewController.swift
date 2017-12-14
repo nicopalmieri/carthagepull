@@ -18,6 +18,6 @@ class ViewController: UIViewController {
 
     @IBAction func pushTapped(_ sender: Any) {
         let controller = manager.getControllerBy(identifier: "BaseController")
-        self.navigationController?.pushViewController(controller, animated: true)
+        navigationController?.pushViewController(controller, animated: true)
     }
 }
